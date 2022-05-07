@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/haochen23/dotfiles/compare/v0.2.0...v0.3.0) (2022-05-07)
+
+
+### Features
+
+* add pre-commit hook config for terraform-docs ([16affa4](https://github.com/haochen23/dotfiles/commit/16affa46c0889ee9a4b4dcc747ccdd5b444deb0a))
+* add tflint config for azurerm ([e8f4ad0](https://github.com/haochen23/dotfiles/commit/e8f4ad023281b3c97a154ec4c44e194d04bed7e2))
+
 ## [0.2.0](https://github.com/haochen23/dotfiles/compare/v0.1.1...v0.2.0) (2022-05-07)
 
 
