@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/haochen23/dotfiles/compare/v0.1.1...v0.2.0) (2022-05-07)
+
+
+### Features
+
+* add .aliases ([54a9c73](https://github.com/haochen23/dotfiles/commit/54a9c73f4292d5cf46e5c0d701008418b51512cc))
+* add git config ([81c1bd3](https://github.com/haochen23/dotfiles/commit/81c1bd3c6fc2cf4a1fd1f5af6ea73a954dd8788f))
+
 ### [0.1.1](https://github.com/haochen23/dotfiles/compare/v0.1.0...v0.1.1) (2022-05-07)
 
 
