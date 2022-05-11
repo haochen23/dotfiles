@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/haochen23/dotfiles/compare/v0.3.0...v0.4.0) (2022-05-11)
+
+
+### Features
+
+* add neovim config ([061f553](https://github.com/haochen23/dotfiles/commit/061f553a9204ac84aede8a361e3f9c70308eb050))
+
 ## [0.3.0](https://github.com/haochen23/dotfiles/compare/v0.2.0...v0.3.0) (2022-05-07)
 
 
