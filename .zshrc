@@ -9,15 +9,13 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-
-ZSH_THEME="powerlevel10k/powerlevel10k"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -79,9 +77,20 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions vim-mode zsh-syntax-highlighting)
+plugins=(
+  git
+  vi-mode
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+autoload -Uz compinit
+compinit
+autoload -U +X bashcompinit && bashcompinit
+source /opt/homebrew/etc/bash_completion.d/az
 
 source $ZSH/oh-my-zsh.sh
+
+source ~/.aliases
 
 # User configuration
 
@@ -108,11 +117,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-source /etc/bash_completion.d/azure-cli
-source /home/eric/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /Users/ericchen/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
 eval $(thefuck --alias)
+# You can use whatever you want as an alias, like for Mondays:
+eval $(thefuck --alias FUCK)
+
+export EDITOR=vim
